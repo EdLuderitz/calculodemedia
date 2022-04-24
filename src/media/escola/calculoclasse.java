@@ -15,11 +15,11 @@ public class calculoclasse {
         double notabimestre3 = Double.parseDouble(nota3);
 
         int resposta = 0;
-
+        /* Força o usuário a clicar para calcular a media */
         do {
             resposta = JOptionPane.showConfirmDialog(null, "Você gostaria de calcular a média?");
             if (resposta == 1 || resposta == 2){
-                JOptionPane.showMessageDialog(null, "Clica em 'Yes' por favor");
+                JOptionPane.showMessageDialog(null, "Clica em 'Yes' por favor!");
             }
             if (resposta == 0) {
                 double media = (notabimestre1 + notabimestre2 + notabimestre3) / 3;
